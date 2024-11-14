@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Ensure to include the font in your HTML */
+    background: linear-gradient(to bottom right, #f4f4f4, #e0e0e0); /* Light grey gradient */
+}
+
+header {
+    background-color: #003366; /* Navy blue */
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.welcome-message {
+    position: absolute; /* Position it at the top */
+    top: 20px; /* Adjust as needed */
+    width: 100%;
+    animation: move 10s linear infinite;
+}
+
+.welcome-message h1 {
+    font-size: 2em; /* Increase font size */
+    color: #333;
+    margin: 0; /* Remove margin for better alignment */
+}
+
+.welcome-message p {
+    font-size: 1.2em; /* Tagline style */
+    color: #666; /* Lighter color for the tagline */
+}
+
+@keyframes move {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+.login-form {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Increase padding */
+    width: 100%; 
+    max-width: 450px; /* Make the form wider */
+}
+
+.login-form h2 {
+    margin: 0 0 20px;
+    font-size: 2em;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cce5ff; /* Light blue */
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.form-group input:focus {
+    border-color: #007bff; /* Blue border on focus */
+    outline: none; /* Remove default outline */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0056b3; /* Royal blue */
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #004494; /* Darker shade on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+.error-message {
+    color: red;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
